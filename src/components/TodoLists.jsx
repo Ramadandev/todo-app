@@ -9,9 +9,8 @@ const TodoLists = () => {
         "http://localhost:4000/rest/get-todos"
       );
       const afterGetDataFromServer = await getAllDataFromServer.json();
-
       //update state
-      if (afterGetDataFromServer.message == "Request accepted!") {
+      if (afterGetDataFromServer.todo_list != "no todo yet") {
         setTodos(afterGetDataFromServer.todo_list);
       }
     } catch (err) {
