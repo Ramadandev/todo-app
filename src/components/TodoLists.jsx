@@ -29,6 +29,8 @@ const TodoLists = () => {
     }
   };
 
+ 
+
   useEffect(() => {
     getDataTodos();
   }, []);
@@ -51,6 +53,7 @@ const TodoLists = () => {
               >
                 <i className="fa-solid fa-trash"></i>
               </button>
+
             </div>
           </div>
         ))}

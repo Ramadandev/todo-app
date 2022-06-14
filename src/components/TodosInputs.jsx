@@ -32,7 +32,7 @@ const TodoInputs = () => {
         <div className="w-full flex flex-row md:w-2/5 lg:w-2/5 sm:w-80 p-3 h-15 rounded-xl bg-[#262626]">
           <input
             type="text"
-            placeholder="Type todo list here.."
+            placeholder="Type todo list here.. by @mframadann"
             className="flex-0 text-white w-[75%] h-[2.27rem] p-3 rounded-md bg-transparent outline-none"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
