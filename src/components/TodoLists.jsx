@@ -23,7 +23,7 @@ const TodoLists = () => {
       await fetch(`https://todo-rest-mframadan.herokuapp.com/rest/delete-todos/${id}`, {
         method: "DELETE",
       });
-      window.location = "/";
+      window.location = "/note";
     } catch (err) {
       console.error(err);
     }
