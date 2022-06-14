@@ -10,7 +10,7 @@ const TodoInputs = () => {
     try {
       const sendData = await axios({
         method: "POST",
-        url: "http://localhost:4000/rest/add-todos",
+        url: "https://todo-rest-mframadan.herokuapp.com/rest/add-todos",
         headers: {
           "Content-Type": "application/json",
         },

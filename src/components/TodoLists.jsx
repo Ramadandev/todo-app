@@ -6,7 +6,7 @@ const TodoLists = () => {
   const getDataTodos = async () => {
     try {
       const getAllDataFromServer = await fetch(
-        "http://localhost:4000/rest/get-todos"
+        "https://todo-rest-mframadan.herokuapp.com/rest/get-todos"
       );
       const afterGetDataFromServer = await getAllDataFromServer.json();
       //update state
@@ -20,7 +20,7 @@ const TodoLists = () => {
 
   const deleteTodo = async (id) => {
     try {
-      await fetch(`http://localhost:4000/rest/delete-todos/${id}`, {
+      await fetch(`https://todo-rest-mframadan.herokuapp.com/rest/delete-todos/${id}`, {
         method: "DELETE",
       });
       window.location = "/";
