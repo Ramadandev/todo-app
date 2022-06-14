@@ -20,7 +20,7 @@ const TodoInputs = () => {
       });
 
       alert("Success add data!");
-      window.location = "/";
+      window.location = "/note";
     } catch (err) {
       console.error(err);
     }
