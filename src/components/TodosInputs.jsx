@@ -20,7 +20,6 @@ const TodoInputs = () => {
       });
 
       alert("Success add data!");
-      console.log(sendData);
       window.location = "/";
     } catch (err) {
       console.error(err);
