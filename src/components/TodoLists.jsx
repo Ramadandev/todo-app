@@ -45,9 +45,6 @@ const TodoLists = () => {
               <h1 className="w-2/3 text-white text-md flex-0">
                 {dsc.description}
               </h1>
-              <button className="flex-1 rounded-md h-7 bg-[#61dafb] mr-2">
-                <i className="fa-solid fa-edit"></i>
-              </button>
               <button
                 className="flex-1 rounded-md h-7 bg-[#61dafb]"
                 onClick={() => deleteTodo(dsc.todos_id)}
